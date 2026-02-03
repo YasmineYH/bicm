@@ -1067,7 +1067,7 @@ footer .copyright {
 }
 
 .about-benefit-section .title {
-    width: 600px;
+    width: 900px;
     margin: 0 auto 0 auto;
 }
 
@@ -1493,6 +1493,7 @@ footer .copyright {
     width: 100%;
     background: rgba(0, 38, 64, 0.05);
     padding: 85px 8vw;
+    scroll-margin-top: 11vh;
 }
 
 .services .service:nth-of-type(2n) {
@@ -1555,6 +1556,7 @@ footer .copyright {
                 justify-content: unset;
         padding: 65px 7vw;
         gap: 35px;
+        scroll-margin-top: 5vh;
     }
 
     .services .service .service-title {

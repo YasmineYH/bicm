@@ -320,7 +320,11 @@ nav ul li a:hover {
 .header-txt {
     width: 70VW;
     text-align: right;
-    margin: 185px 7vw 0 auto;
+    margin: 185px 9vw 0 auto;
+}
+
+.header-txt h1 {
+    font-size: 50px;
 }
 
 .other-header-txt h1 {
@@ -334,12 +338,12 @@ nav ul li a:hover {
     font-weight: 600;
     font-size: 12.5px;
     letter-spacing: 0.05em;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .header-graphic {
     width: calc(100% - 9vw + 30px);
-    margin: -150px 9vw 50px -30px;
+    margin: -185px 9vw 50px -30px;
 }
 
 .header-graphic-tablet {
@@ -354,16 +358,28 @@ header .main-btn {
     margin: auto;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1275px) {
     .header-graphic {
-        margin: -100px 9vw 50px -30px;
+        margin: -150px 9vw 50px -20px;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+    }
+
+    .header-txt p {
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width: 1000px) {
     .header-txt {
         width: 80vw;
-        margin: 145px 7vw 0 auto;
+        margin: 145px auto 0 auto;
+    }
+
+    .header-txt h1 {
+        font-size: 35px;
     }
 
     .header-graphic {
@@ -373,7 +389,7 @@ header .main-btn {
     .header-graphic-tablet {
         display: block;
         width: 86vw;
-        margin: 45px 7vw 35px 7vw;
+        margin: 25px 7vw 35px 7vw;
     }
 }
 
@@ -382,6 +398,10 @@ header .main-btn {
         width: 80vw;
         text-align: center;
         margin: 75px auto 0 auto;
+    }
+
+    .header-txt h1 {
+        font-size: 30px;
     }
 
     .header-txt p {
@@ -401,7 +421,7 @@ header .main-btn {
     .header-graphic-phone {
         display: block;
         width: 96vw;
-        margin: 45px 4vw 55px 4vw;
+        margin: 35px auto 55px auto;
     }
 
     header .main-btn {

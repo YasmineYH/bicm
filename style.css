@@ -571,6 +571,46 @@ section {
 
 
 
+/* HOME PARTNERS SECTION */
+.partners-section .title {
+    margin: unset;
+    margin-bottom: 95px;
+    text-align: left;
+}
+
+.partners-section .partners-ctn {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.partners-section .partner {
+    brder: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    border-radius: 200px;
+}
+
+.partners-section .partner img {
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.partners-section .partner h4 {
+    display: none;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+
 /* HOME BENEFITS SECTION */ 
 .benefit-section {
     display: -webkit-box;
@@ -642,7 +682,7 @@ section {
 .client-review {
     position: relative;
     border-radius: 20px;
-    width: 245px;
+    width: 285px;
     height: 215px;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#002640));
     background: -o-linear-gradient(#ffffff, #002640);
@@ -655,7 +695,7 @@ section {
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 241px;
+    width: 281px;
     z-index: -1;
     border-radius: 18px;
     height: calc(100% - 4px);
@@ -821,7 +861,7 @@ section {
 }
 
 .members-section .client-review {
-    height: 135px;
+    height: 145px;
 }   
 
 .members-section .client-review .review-title h4 {
@@ -831,7 +871,7 @@ section {
 .members-section .client-review .review-title p {
     width: 85%;
     margin-top: 10px;
-    font-size: 14px;    
+    font-size: 12px;    
     text-transform: uppercase;
 }
 
@@ -1173,7 +1213,7 @@ footer .copyright {
 
 .temporary-staff .about-temp-staff .client-review {
     width: 335px;
-    height: 150px;
+    height: unset;
 }
 
 .temporary-staff .about-temp-staff .client-review::after {
@@ -1383,6 +1423,46 @@ footer .copyright {
     .about-our-values .title {
         width: 85vw;
     }
+}
+
+
+
+
+/*PROJECTS PAGE*/
+.projects-benefit-section {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 75px;
+    margin-top: 135px;
+    background-image: url("./images/gradient-thin.png");
+    background-size: 90vw;
+    background-position: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.projects-benefit-section h2 {
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.projects-ctn {
+    border: 3px solid;
+    margin: -2px 8vw 0 8vw;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.projects-ctn .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 35px 75px;
 }
 
 

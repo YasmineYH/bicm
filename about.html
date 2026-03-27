@@ -21,6 +21,7 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Nos projets</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -82,7 +83,7 @@
 
         <div class="location">
             <img src="./images/map.png" alt="Cotonou">
-            <button class="main-btn">Voir sur la carte</button>
+            <button onclick="location.href = 'https://maps.app.goo.gl/gKvVtdvvE3Xs448m8?g_st=iw'" class="main-btn">Voir sur la carte</button>
         </div>
     </section>
 
@@ -96,16 +97,51 @@
             <div class="client-review">
                 <img src="./images/user.png" alt="Reviewer">
                 <div class="review-title">
-                    <h4>John DOE</h4>
-                    <p>Directeur général</p>
+                    <h4>Foussénatou ADAMOU SOULE</h4>
+                    <p>Gérante</p>
                 </div>
             </div>
 
             <div class="client-review">
                 <img src="./images/user.png" alt="Reviewer">
                 <div class="review-title">
-                    <h4>John DOE</h4>
-                    <p>Business et opérations</p>
+                    <h4>Ismail MAMAN ZAKARI</h4>
+                    <p>Directeur Exécutive</p>
+                </div>
+            </div>
+            <div class="client-review">
+                <img src="./images/user.png" alt="Reviewer">
+                <div class="review-title">
+                    <h4>Dr Moudachirou SOULE</h4>
+                    <p>Chef de Projets</p>
+                </div>
+            </div>
+            <div class="client-review">
+                <img src="./images/user.png" alt="Reviewer">
+                <div class="review-title">
+                    <h4>Mouiz YESSOUFOU</h4>
+                    <p>Responsable de Recherche et Développement</p>
+                </div>
+            </div>
+            <div class="client-review">
+                <img src="./images/user.png" alt="Reviewer">
+                <div class="review-title">
+                    <h4>Abdou-Wakilou BIO KERI</h4>
+                    <p>Responsable des Operations</p>
+                </div>
+            </div>
+            <div class="client-review">
+                <img src="./images/user.png" alt="Reviewer">
+                <div class="review-title">
+                    <h4>Amos N’DAH</h4>
+                    <p>Assistant aux Operations</p>
+                </div>
+            </div>
+            <div class="client-review">
+                <img src="./images/user.png" alt="Reviewer">
+                <div class="review-title">
+                    <h4></h4>
+                    <p>Assistante Administratif et Financière</p>
                 </div>
             </div>
         </div>
@@ -119,50 +155,43 @@
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en gestion de projet</p>
+                        <h4>Dr Moudachirou SOULE</h4>
+                        <p>Expert en Gouvernance publique - Agrobusiness - Développement organisationnel et intentionnel - Coopération transfrontalière locale</p>
                     </div>
                 </div>
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en suivi et évaluation</p>
+                        <h4>Alain TOSSOUNON</h4>
+                        <p>Expert en Communication - Capitalisation et Gestion des connaissances</p>
                     </div>
                 </div>
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en ressources humaines</p>
+                        <h4>Sandrine DEGLA</h4>
+                        <p>Experte en Finances publique - Gestion budgétaire</p>
                     </div>
                 </div>
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en analyse financière</p>
+                        <h4>Bertille BIAOU</h4>
+                        <p>Experte en Genre et Inclusion sociale</p>
                     </div>
                 </div>
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en analyse de données</p>
+                        <h4>Ousmane OROU TOKO</h4>
+                        <p>Expert en Formulation et Evaluation de projets</p>
                     </div>
                 </div>
                 <div class="client-review">
                     <img src="./images/user.png" alt="Reviewer">
                     <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en analyse de projet</p>
-                    </div>
-                </div>
-                <div class="client-review">
-                    <img src="./images/user.png" alt="Reviewer">
-                    <div class="review-title">
-                        <h4>Collaborateurs temporaires</h4>
-                        <p>Spécialiste en analyse des politiques</p>
+                        <h4>Jean MOISE</h4>
+                        <p>Expert en Conception de projets - Genre et droits humain</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +207,7 @@
         </div>
 
         <form name="contact_short" netlify>
-            <input type="text" placeholder="Nom et Prénom" name="full_name">
+            <input type="text" placeholder="Nom et Prénom:" name="full_name">
             <input type="email" placeholder="Adresse Email:" name="email">
             <button type="submit" class="main-btn">Prenez Rendez-vous</button>
         </form>
@@ -186,8 +215,6 @@
 
     <footer>
         <div class="socials">
-            <img src="./images/facebook.svg" alt="Facebook">
-            <img src="./images/twitter.svg" alt="Twitter">
             <img onclick="location.href = 'https://www.linkedin.com/in/local-focus-consulting-64b7ab39a/'" src="./images/linkedin.svg" alt="LinkedIn">
         </div>
 
@@ -195,12 +222,13 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Nos projets</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <p class="copyright">Copyright © 2024 BICM SARL - All rights reserved.</p>
+        <p class="copyright">Copyright © 2026 LOCAL FOCUS CONSULTING - Tous droits reservés.</p>
     </footer>
 </body>
 

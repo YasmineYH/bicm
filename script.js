@@ -1,3 +1,4 @@
+// Hamburger menu animation
 let burger = document.querySelector('.burger')
 let nav = document.querySelector('header nav ul')
 
@@ -23,29 +24,27 @@ burger.addEventListener('click', () => {
 
 
 
+// Home page partners section animation & All pages loading animation 
+ window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader")
+    const loaderimg = document.querySelector(".loader img")
+    
+    // const partners = document.getElementsByClassName("partner")
 
-//Practise Area
-function createSquare(length) {
-    return {
-        length,
-        area: function() {
-            console.log(this.length * 4)
-        }
-    }
-}
+    loader.classList.add("loaded")
+    loaderimg.classList.add("loaded")
 
-const circle = createSquare(40)
-console.log(circle.area())
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild("loader")
+    })
 
+    // setTimeout(() => {
+    //     console.log(partners)
+    //     for (let i=0; i<partners.length; i++) {
+    //         partners[i].classList.add("move")
+    //         console.log(partners[i])
+    //     }
+    // }, 3000)
+ })
 
-
-function Square(length) {
-    this.length = length,
-    this.area = function() {
-        console.log(this.length * 4)
-    }
-}
-
-const another = new Square(4)
-console.log(another.area())
 

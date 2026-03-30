@@ -705,8 +705,8 @@ section {
 .client-review img {
     position: absolute;
     top: -50px;
-    left: calc(50% - 50px);
-    width: 100px;
+    left: calc(50% - 42px);
+    height: 100px;
 }
 
 .client-review .review-title {
@@ -1432,9 +1432,16 @@ footer .copyright {
 /*PROJECTS PAGE*/
 .projects-benefit-section {
     height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 75px;
     margin-top: 135px;
     background-image: url("./images/gradient-thin.png");
@@ -1451,9 +1458,13 @@ footer .copyright {
 
 .projects-ctn {
     margin-top: 135px;
+    display: -ms-grid;
     display: grid;
     gap: 35px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr 35px 1fr 35px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -1470,9 +1481,26 @@ footer .copyright {
     font-size: 18px;
 }
 
-.projects-ctn .project .location {
+.projects-ctn .project .client {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.projects-ctn .project .client img {
+    height: 25px;
+}
+
+.projects-ctn .project .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 45px;
     border: 1px solid #ff6d2e;
     padding: 5px 15px;
@@ -1488,6 +1516,7 @@ footer .copyright {
 @media (max-width: 1040px) {
     .projects-ctn {
         gap: 25px;
+        -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -1499,6 +1528,7 @@ footer .copyright {
 @media (max-width: 940px) {
     .projects-ctn {
         margin-top: 75px;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -1506,6 +1536,7 @@ footer .copyright {
 @media (max-width: 640px) {
     .projects-ctn {
         margin-top: 75px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 

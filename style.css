@@ -675,8 +675,8 @@ section {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
-    -webkit-animation: auto-scroll 15s ease-in-out normal infinite;
-            animation: auto-scroll 15s ease-in-out normal infinite;
+    -webkit-animation: auto-scroll 20s ease-in-out normal infinite;
+            animation: auto-scroll 20s ease-in-out normal infinite;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
 }

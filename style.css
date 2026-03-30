@@ -632,6 +632,18 @@ section {
     visibility: hidden;
 }
 
+@media (max-width: 840px) {
+    .loader img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 640px) {
+    .loader img {
+        width: 100px;
+    }
+}
+
 
 
 
